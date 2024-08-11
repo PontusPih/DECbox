@@ -5,11 +5,11 @@ Blueprints and requirements for a box used to store DEC flipchips
 
 Example Quad card (DR-11):
 
-![bild](https://github.com/user-attachments/assets/fbac9d73-3fa8-4c50-a216-c5a78c5b953a)
+![DR-11 drawing](img/DR-11.png)
 
 Example Hex card (DH-11):
 
-![bild](https://github.com/user-attachments/assets/0c0a0c97-8d5e-4b78-8536-4a2c6310b70e)
+![DH-11 drawing](img/DH-11.png)
 
 
 ## Hard requirements
