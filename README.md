@@ -3,14 +3,24 @@ Blueprints and requirements for a box used to store DEC flipchips
 
 ## Examples
 
-Example Quad card (DR-11):
+Overall dimensions for single, dual and quad cards:
+![Card dimension](img/card_dimensions.png)
 
-![DR-11 drawing](img/DR-11.png)
-
-Example Hex card (DH-11):
+Overall dimesions for example Hex card (DH-11)
 
 ![DH-11 drawing](img/DH-11.png)
 
+Perspective views:
+
+![Single card perspective](img/single_perspective.png)
+
+![Dual card perspective](img/dual_perspective.png)
+
+![quad card perspective](img/quad_perspective.png)
+
+Example Quad card (DR-11):
+
+![DR-11 drawing](img/DR-11.png)
 
 ## Hard requirements
 
