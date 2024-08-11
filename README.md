@@ -16,7 +16,9 @@ Perspective views:
 
 ![Dual card perspective](img/dual_perspective.png)
 
-![quad card perspective](img/quad_perspective.png)
+![Quad card perspective](img/quad_perspective.png)
+
+![Backplanve perspective](img/backplane_perspective.png)
 
 Example Quad card (DR-11):
 
