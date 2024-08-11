@@ -56,4 +56,6 @@ DH-11 Engineering drawings (has dimensions for HEX card on page seven):
 
 http://www.bitsavers.org/pdf/dec/unibus/DH11_EngrDrws_Jul76.pdf
 
+Module dimensions and perspective drawings (pages 21-24)
 
+http://www.bitsavers.org/pdf/dec/handbooks/Digital_Logic_Handbook_1975-76.pdf
