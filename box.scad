@@ -25,6 +25,8 @@ slot_width = 3;
 slot_clearance = 0.25; // Extra wiggle room on each side of board
 board_h_clearance = 2; // From tallest component to next board
 
+steer_length = 30;      // instyrning av kortet
+
 // calculated dimensions
 
 slot_depth = component_clearance + slot_clearance;
@@ -42,10 +44,10 @@ number_of_quad_slots = floor((box_inner_w - first_slot_clearance - board_unit) /
 // Short sides
 difference() {
     union() {
-        translate([-box_wall_w, 0, 0])
-            cube([box_wall_w,box_inner_d,box_wall_h]);
-        translate([box_inner_w, 0, 0])
-            cube([box_wall_w,box_inner_d, box_wall_h]);
+        translate([-box_wall_w, -10, 0])
+            #cube([box_wall_w,box_inner_d+20,box_wall_h]);
+        translate([box_inner_w, -10, 0])
+            #cube([box_wall_w,box_inner_d+20, box_wall_h]);
     }
     hex_slots();
 }
@@ -67,8 +69,14 @@ module quad_slots() {
     translate([first_slot_clearance, -slot_depth, -1]) {
         for(i = [0: number_of_quad_slots]) {
             translate([i * board_unit, 0, 0])
-                cube([slot_width, quad_slot_w, box_wall_h + 2]);
-        }
+            union() {
+                cube([slot_width, 2.5, box_wall_h + 2]);   //Pih
+                     translate([first_slot_clearance+6, slot_depth+0.1, 186])
+                    rotate([0,-90,90])
+                        steer();
+            }
+       }
+        
     }
 }
 
@@ -80,3 +88,19 @@ module hex_slots() {
         }
     }
 }
+
+module steer() {
+    linear_extrude(slot_depth+0.1)                              //+0.1 för att OS kräver det se rad 70
+        polygon([[0,0],[steer_length,-4],[steer_length,4]]);    
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
